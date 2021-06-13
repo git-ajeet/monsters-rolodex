@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://jsonplaceholder.typicode.com/users").then(response => response.json()).then(response => this.setState({"monsters" : response}));
+    fetch("https://jsonplaceholder.typicode.com/users").then(response => response.json()).then(response => this.setState({"monsters" : response}));
   }
   render() {
     const { monsters, searchField } = this.state;
